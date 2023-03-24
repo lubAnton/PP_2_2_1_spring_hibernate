@@ -6,5 +6,5 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
-.idea/libraries/
+/.idea/libraries/
 /2.2.1. spring_hibernate/target/
