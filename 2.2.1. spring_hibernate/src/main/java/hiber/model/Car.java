@@ -9,9 +9,11 @@ public class Car {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     @Column (name = "series")
-    private int series;
+    private long series;
     @Column (name = "model")
     private String model;
+    @OneToOne (mappedBy = "car")
+    private User user;
 
     public Car() {
     }
@@ -20,7 +22,7 @@ public class Car {
         this.model = model;
     }
 
-    public int getSeries() {
+    public long getSeries() {
         return series;
     }
 
